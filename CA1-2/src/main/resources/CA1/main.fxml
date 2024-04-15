@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="baseVBox" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CA1.MainController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="800.0">
+            <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="openImage" mnemonicParsing="false" onAction="#openImage" text="Open Image" />
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu fx:id="imageMenu" mnemonicParsing="false" text="Image">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#resetAllPills" text="Reset All Pills" />
+                  <MenuItem mnemonicParsing="false" onAction="#resetRectangles" text="Reset Rectangles" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="anchorPane" maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" stylesheets="@stylesheet.css" VBox.vgrow="ALWAYS">
+            <children>
+                <ImageView fx:id="imageView" fitHeight="225.0" fitWidth="325.0" layoutX="72.0" layoutY="135.0" onMouseClicked="#pillSelected" pickOnBounds="true" preserveRatio="true" styleClass="main" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="801.0" layoutY="190.0" prefHeight="29.0" prefWidth="131.0" text="NAME" />
+                <TextField fx:id="pillNameField" layoutX="796.0" layoutY="219.0" prefHeight="29.0" prefWidth="141.0" />
+                <Button fx:id="viewImageDetailsButton" layoutX="842.0" layoutY="541.0" mnemonicParsing="false" onAction="#viewImageDetails" prefHeight="29.0" prefWidth="141.0" text="View Details" />
+                <Button fx:id="addButton" layoutX="801.0" layoutY="307.0" mnemonicParsing="false" onAction="#confirmPill" prefHeight="29.0" prefWidth="141.0" text="Add" />
+                <Slider fx:id="sSlider" layoutX="767.0" layoutY="14.0" majorTickUnit="0.25" max="0.5" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                <Slider fx:id="hSlider" layoutX="838.0" layoutY="14.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                <Slider fx:id="bSlider" layoutX="910.0" layoutY="14.0" majorTickUnit="0.25" max="0.5" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                <Label layoutX="747.0" layoutY="161.0" text="SATURATION" />
+                <Label layoutX="845.0" layoutY="161.0" text="HUE" />
+                <Label layoutX="892.0" layoutY="161.0" text="BRIGHTNESS" />
+                <Button fx:id="colourPills" layoutX="2.0" layoutY="509.0" mnemonicParsing="false" onAction="#colourPills" prefHeight="29.0" prefWidth="141.0" text="colour pills" />
+            <ImageView fx:id="bwImageView" fitHeight="225.0" fitWidth="325.0" layoutX="397.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" styleClass="main" />
+            <Button fx:id="randomColourPills" layoutX="2.0" layoutY="544.0" mnemonicParsing="false" onAction="#randomColourPills" prefHeight="29.0" prefWidth="141.0" text="random colour pills" />
+            <Slider fx:id="minimumSlider" blockIncrement="5.0" layoutX="235.0" layoutY="360.0" majorTickUnit="50.0" max="500.0" min="1.0" minorTickCount="5" onMouseDragged="#minSizeLabel" prefHeight="38.0" prefWidth="325.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor></Slider>
+            <Label layoutX="349.0" layoutY="398.0" prefHeight="20.0" prefWidth="97.0" text="MINIMUM SIZE" />
+            <Label fx:id="minimumSizeLabel" layoutX="380.0" layoutY="418.0" prefHeight="20.0" prefWidth="35.0" text="(000)" />
+            <Label fx:id="totalLabel" layoutX="332.0" layoutY="4.0" prefHeight="20.0" prefWidth="131.0" text="TOTAL PILLS: 0 " />
+            <Label layoutX="332.0" layoutY="24.0" text="PILLS OF SAME TYPE:" />
+            <ListView fx:id="sameTypeList" layoutX="297.0" layoutY="44.0" prefHeight="86.0" prefWidth="200.0" />
+            <Button fx:id="checkSizeButton" layoutX="801.0" layoutY="271.0" mnemonicParsing="false" onAction="#checkMinimum" prefHeight="29.0" prefWidth="141.0" text="Check Minimum Size" />
+            <Button layoutX="327.0" layoutY="471.0" mnemonicParsing="false" onAction="#switchTwoTone" prefHeight="29.0" prefWidth="141.0" text="Two Tone" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

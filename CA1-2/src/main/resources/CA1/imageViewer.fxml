@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="bAndWImageView" fitHeight="192.0" fitWidth="310.0" layoutX="14.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="87.0" layoutY="367.0" text="BLACK AND WHITE IMAGE" />
+      <ImageView fx:id="pillColourImage" fitHeight="192.0" fitWidth="310.0" layoutX="345.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="randomColourImage" fitHeight="192.0" fitWidth="310.0" layoutX="676.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="436.0" layoutY="367.0" text="PILL COLOUR IMAGE" />
+      <Label layoutX="749.0" layoutY="367.0" text="RANDOM COLOUR IMAGE" />
+      <ImageView fx:id="originalImage" fitHeight="268.0" fitWidth="419.0" layoutX="291.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="447.0" layoutY="307.0" text="ORIGINAL IMAGE" />
+    </children>
+</AnchorPane>

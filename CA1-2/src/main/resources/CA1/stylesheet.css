@@ -1,0 +1,106 @@
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: #00CED1, #00CED1, linear-gradient(to right, #00CED1 0%, #00CED1 50%, #20B2AA 50%, #20B2AA 100%);
+    -fx-background-insets: 0, 0 1 0 1, 0 1 0 0;
+    -fx-background-radius: 10px;
+    -fx-border-color: #00CED1;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px 10px;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, #00CED1, 20, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.button:pressed {
+    -fx-background-color: #20B2AA, #20B2AA, linear-gradient(to right, #20B2AA 0%, #20B2AA 50%, #00CED1 50%, #00CED1 100%);
+    -fx-background-insets: 0, 0 1 0 1, 0 1 0 0;
+    -fx-background-radius: 10px;
+}
+
+.main {
+    -fx-background-color: #006666;
+}
+
+.menu-bar {
+    -fx-background-color: #003333;
+}
+
+.context-menu {
+    -fx-background-color: #007070;
+}
+
+.slider {
+    -fx-background-color: #006666;
+}
+
+.slider .track {
+    -fx-background-color: #20B2AA;
+}
+
+.slider .thumb {
+    -fx-background-color: #00CED1;
+    -fx-background-insets: 0;
+    -fx-padding: 7px;
+}
+
+.slider .axis {
+    -fx-tick-label-fill: white;
+}
+
+.list-view {
+    -fx-background-color: #007070;
+    -fx-control-inner-background: #007070;
+}
+
+.text-field {
+    -fx-background-color: #007070;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-background-color: #007070;
+}
+
+.menu-item:hover {
+    -fx-background-color: #008B8B;
+}
+
+.menu-item:pressed {
+    -fx-background-color: #005555;
+}
+
+.color-picker {
+    -fx-background-color: #007070;
+    -fx-text-fill: white;
+}
+
+.color-picker:hover {
+    -fx-background-color: #008B8B;
+}
+
+.radio-button {
+    -fx-background-color: #007070;
+    -fx-text-fill: white;
+}
+
+.radio-button:hover {
+    -fx-background-color: #008B8B;
+}
+
+.radio-button:pressed {
+    -fx-background-color: #005555;
+}

@@ -1,0 +1,4 @@
+JMH S 23 org.example.MyBenchmark S 54 org.example.jmh_generated.MyBenchmark_testFind_jmhTest S 8 testFind S 11 AverageTime E A 1 1 1 E I 1 5 E E I 2 10 E E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 23 org.example.MyBenchmark S 61 org.example.jmh_generated.MyBenchmark_testPillGetters_jmhTest S 15 testPillGetters S 11 AverageTime E A 1 1 1 E I 1 5 E E I 2 10 E E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 23 org.example.MyBenchmark S 61 org.example.jmh_generated.MyBenchmark_testPillSetters_jmhTest S 15 testPillSetters S 11 AverageTime E A 1 1 1 E I 1 5 E E I 2 10 E E I 1 1 E E E E E E U 11 NANOSECONDS E E 
+JMH S 23 org.example.MyBenchmark S 55 org.example.jmh_generated.MyBenchmark_testUnion_jmhTest S 9 testUnion S 11 AverageTime E A 1 1 1 E I 1 5 E E I 2 10 E E I 1 1 E E E E E E U 11 NANOSECONDS E E 
