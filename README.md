@@ -17,9 +17,13 @@ IMPLEMENTATION NOTES
 
 - image should be converted to b&w in the first instance pixel by pixel using suitable luminance/hue/saturation/brightness/RGB calculations
 > pixels belonging to a pill should be white, anything else black
+> 
 > users should be able to select the pill types in the image to location, done primarily by colour where the user clicks on a sample of the pill type to locate so a colour sample can be taken from the selected pixel then, when converting to b&w, any pixel in the image with a colour sufficiently like any selected pill sample colour will be white, all other will be black.
+> 
 > use hue, saturation, brightness, RGB channels, etc. to determine pixel colour similarity
+> 
 > allow the user to specify parameters for colour similarity settings/thresholds when pills are selected ***THIS IS CRUCIAL TO ACHIEVE A CLEAN BLACK AND WHITE CONVERSION FOR THE UNION-FIND TO WORK WELL FOR A GIVEN IMAGE***
+> 
 > users should be able to view the b&w version in a separate window/tab etc.
 
 - each pixel in the b&w image can initially be considered a disjoint set, this info potentially represented in an array. Union-find can then be applied to union adjacent white pixels to identify pills of any type, black pixels can be disregarded
