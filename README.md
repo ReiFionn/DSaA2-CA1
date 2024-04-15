@@ -96,6 +96,19 @@ MARKING SCHEME
 ---------------------------------------------------------------------------				
 RESULT
 ---------------------------------------------------------------------------
-Minimal (and not functional) implementation of two-tone recognition.
+
+- Image file selection and display
+- Black-and-white image conversion and display
+- Union-find implementation
+- Onscreen identification of all selected pills/capsules (using rectangles)
+- Ordered sequential pill/capsule numbering (onscreen labelling with ToolTip)
+- Estimating/counting of pills/capsules in overall image (total and by type/name)
+- Reporting the size of individual disjoint sets (in pixel units)
+- Colouring disjoint sets in black-and-white image (both sampled and random colours)
+- Minimal (and not functional) implementation of two-tone recognition
+- Image noise reduction and outlier management
+- JavaFX GUI
+- JUnit Testing
+- JMH Benchmarking of key methods (in separate project, combined together for this GitHub)
 
 90%, 31.5% of module grade.
