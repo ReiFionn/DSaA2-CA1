@@ -39,26 +39,39 @@ IMPLEMENTATION NOTES
 
 - it should be possible to see the pixels of indiviual disjoints sets in the b&w image, possibly by:
 > colouring all white pixels in the b&w image to their pill type sample colours
+> 
 > randomly colouring the various disjoint sets in the b&w image
 
 - there should be support for the recognition of two-tone pills, whereby the colours of both ends of the capsule are recorded and used to recognise whole capsules
 
 - some level of image noise reduction and outlier management should be incorporated into the analyser to allow users to strip out disjoin sets that are heuristically unlikely to be pills
 > application should allow for min & max pill sizes to be user specified
+> 
 > the size of the sampled pill's disjoint set could be used to identify similar pills based on size similarity as well as colour similarity
+> 
 > consider calculations based on the interquartile range (for instance) to identify outliers
+> 
 > as noted before, some user-adjustable settings could be provided to achieve a good and clean b&w image coversion before the union-find operation
 
 - an appropriate interactive JavaFX GUI should be provieded to allow the users to:
 > select an image file to use
+> 
 > view the original image
+> 
 > choose one or more pills by clicking on them to sample their colour. The names of the pills should also be recorded, along with similarity settings for colour and size
+> 
 > perform and view the b&w image conversion, using the user specified pill colour/size similarity settings
+> 
 > perform the pill recognition and mark pills on the original image with coloured rectangles
+> 
 > see estimates of the number of pills in the image and the pixel unit/disjoint set sizes
+> 
 > ordered sequential numbering of pills, including on screen labelling
+> 
 > visualise disjoint set pixels in the b&w image
+> 
 > adjust settings to manage noise and outliers to aid the b&w conversion
+> 
 > clearly navigate and exit the application and have a good user experience overall
 
 ---------------------------------------------------------------------------				
