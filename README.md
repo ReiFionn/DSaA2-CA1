@@ -78,20 +78,20 @@ IMPLEMENTATION NOTES
 MARKING SCHEME
 ---------------------------------------------------------------------------
 
- Image file selection and display = 5%
- Black-and-white image conversion and display = 8%
- Union-find implementation = 10%
- Onscreen identification of all selected pills/capsules (using rectangles) = 10%
- Ordered sequential pill/capsule numbering (onscreen labelling) = 8%
- Estimating/counting of pills/capsules in overall image (total and by type/name) = 8%
- Reporting the size of individual disjoint sets (in pixel units) = 7%
- Colouring disjoint sets in black-and-white image (both sampled and random colours) = 8%
- Recognition of two-tone capsules = 8%
- Image noise reduction and outlier management = 8%
- JavaFX GUI = 5%
- JUnit Testing = 5%
- JMH Benchmarking of key methods = 5%
- General (overall completeness, structure, commenting, logic, etc.) = 5% 
+- Image file selection and display = 5%
+- Black-and-white image conversion and display = 8%
+- Union-find implementation = 10%
+- Onscreen identification of all selected pills/capsules (using rectangles) = 10%
+- Ordered sequential pill/capsule numbering (onscreen labelling) = 8%
+- Estimating/counting of pills/capsules in overall image (total and by type/name) = 8%
+- Reporting the size of individual disjoint sets (in pixel units) = 7%
+- Colouring disjoint sets in black-and-white image (both sampled and random colours) = 8%
+- Recognition of two-tone capsules = 8%
+- Image noise reduction and outlier management = 8%
+- JavaFX GUI = 5%
+- JUnit Testing = 5%
+- JMH Benchmarking of key methods = 5%
+- General (overall completeness, structure, commenting, logic, etc.) = 5% 
 
 ---------------------------------------------------------------------------				
 RESULT
