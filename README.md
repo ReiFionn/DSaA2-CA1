@@ -96,5 +96,6 @@ MARKING SCHEME
 ---------------------------------------------------------------------------				
 RESULT
 ---------------------------------------------------------------------------
+Minimal (and not functional) implementation of two-tone recognition.
 
 90%, 31.5% of module grade.
