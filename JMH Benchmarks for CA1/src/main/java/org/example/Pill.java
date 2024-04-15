@@ -1,16 +1,21 @@
 package org.example;
 
+import javafx.scene.paint.Color;
+
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Pill {
     private String name;
     private int root;
     private ArrayList<Integer> indexes = new ArrayList<Integer>();
+    private Color colour;
     private boolean twoColours;
 
-    public Pill(String name, int root) {
+    public Pill(String name, int root, Color color) {
         this.name = name;
         this.root = root;
+        this.colour = color;
         this.twoColours = false;
     }
 
@@ -42,12 +47,20 @@ public class Pill {
         this.indexes = indexes;
     }
 
+    public Color getColour() {
+        return colour;
+    }
+    public void setColour(Color colour) {
+        this.colour = colour;
+    }
+
     @Override
     public String toString() {
         return "Pill{" +
                 "name='" + name + '\'' +
                 ", root=" + root +
                 ", indexes=" + indexes +
+                ", colour=" + colour +
                 ", isTwoColours=" + twoColours +
                 '}';
     }

@@ -1,5 +1,6 @@
 package org.example;
 
+import javafx.scene.paint.Color;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.RunnerException;
 import sun.tools.jar.Main;
@@ -26,7 +27,7 @@ public class MyBenchmark {
 
         pills = new Pill[10];
         for (int i = 0; i < 10; i++) {
-            pills[i] = new Pill("Pill" + i, i);
+            pills[i] = new Pill("Pill" + i, i, new Color(i,i,i,i));
         }
     }
 
