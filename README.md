@@ -3,10 +3,15 @@ DSaA2 - CA1 : PILL AND CAPSULE ANALYSER
 ---------------------------------------------------------------------------
 
 > user supplies image
+> 
 > system displays image
+> 
 > user can select one or more pills by clicking them
+> 
 > user will be able to specify a name for the pill, with some search parameters such as min/max pill size, colour range settings/thresholds
+> 
 > system then locates the pills in the image and estimate how many there are in the image overall
+> 
 > system should mark location of pills in the image with coloured rectangles
 
 ---------------------------------------------------------------------------		
