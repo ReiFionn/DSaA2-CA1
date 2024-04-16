@@ -20,7 +20,7 @@ IMPLEMENTATION NOTES
 
 - key aspect is to use a union-find algorithm to locate pills
 
-- image should be converted to b&w in the first instance pixel by pixel using suitable luminance/hue/saturation/brightness/RGB calculations
+- image should be converted to black and white (b&w) in the first instance pixel by pixel using suitable luminance/hue/saturation/brightness/RGB calculations
 > pixels belonging to a pill should be white, anything else black
 > 
 > users should be able to select the pill types in the image to location, done primarily by colour where the user clicks on a sample of the pill type to locate so a colour sample can be taken from the selected pixel then, when converting to b&w, any pixel in the image with a colour sufficiently like any selected pill sample colour will be white, all other will be black.
